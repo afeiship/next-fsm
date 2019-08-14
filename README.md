@@ -12,6 +12,7 @@ npm install -S afeiship/next-fsm --registry=https://registry.npm.taobao.org
 | state        | -      | initial state          |
 | transitions  | -      | states list            |
 | onTransition | -      | When transition change |
+| transition   | -      | Change state directly  |
 
 ## usage
 ```js
@@ -32,6 +33,9 @@ const fsm = new nx.Fsm({
 
 fsm.on();
 fsm.off();
+
+fsm.transition('on');
+fsm.transition('off');
 ```
 
 ## resources
