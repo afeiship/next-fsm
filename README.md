@@ -9,7 +9,7 @@ npm install -S afeiship/next-fsm --registry=https://registry.npm.taobao.org
 ## apis
 | api          | params | description            |
 | ------------ | ------ | ---------------------- |
-| state        | -      | initial state          |
+| init         | -      | initial state          |
 | transitions  | -      | states list            |
 | onTransition | -      | When transition change |
 | transition   | -      | Change state directly  |
@@ -19,7 +19,7 @@ npm install -S afeiship/next-fsm --registry=https://registry.npm.taobao.org
 import NxFsm from 'next-fsm';
 
 const fsm = new nx.Fsm({
-  state: false,
+  init: false,
   transitions: [
     { name: 'on', from: false, to: true },
     { name: 'off', from: true, to: false }

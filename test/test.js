@@ -6,7 +6,7 @@
     test('init', function() {
       var times = 0;
       var fsm = new nx.Fsm({
-        state: false,
+        init: false,
         transitions: [
           { name: 'on', from: false, to: true },
           { name: 'off', from: true, to: false }

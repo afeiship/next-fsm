@@ -7,7 +7,7 @@
     methods: {
       init: function(inOptions) {
         this.options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
-        this.state = this.options.state;
+        this.state = this.options.init;
         this.transitions = this.options.transitions;
         this.__generateStateExecutor();
       },
