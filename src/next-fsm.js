@@ -9,6 +9,7 @@
         this.options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
         this.state = this.options.state;
         this.transitions = this.options.transitions;
+        this.__generateStateExecutor();
       },
       transition: function(inName) {
         var current = this.transitions.find(function(item) {

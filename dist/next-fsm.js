@@ -2,7 +2,7 @@
  * name: next-fsm
  * url: https://github.com/afeiship/next-fsm
  * version: 1.0.0
- * date: 2019-08-14T08:37:37.021Z
+ * date: 2019-08-14T08:46:07.801Z
  * license: MIT
  */
 
@@ -17,6 +17,7 @@
         this.options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
         this.state = this.options.state;
         this.transitions = this.options.transitions;
+        this.__generateStateExecutor();
       },
       transition: function(inName) {
         var current = this.transitions.find(function(item) {
