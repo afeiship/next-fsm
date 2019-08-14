@@ -35,4 +35,4 @@ fsm.off();
 ```
 
 ## resources
-- https://github.com/afeiship
+- https://github.com/afeiship/fsm-notes
