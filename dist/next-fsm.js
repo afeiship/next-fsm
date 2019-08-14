@@ -2,7 +2,7 @@
  * name: next-fsm
  * url: https://github.com/afeiship/next-fsm
  * version: 1.0.0
- * date: 2019-08-14T08:55:47.046Z
+ * date: 2019-08-14T09:09:11.677Z
  * license: MIT
  */
 
@@ -23,7 +23,7 @@
         var current = this.transitions.find(function(item) {
           return item.name === inName;
         });
-        if (this.state === current.from) {
+        if (this.state === current.from || current.from === '*') {
           var value = current.to;
           this.state = value;
           this.options.onTransition({

@@ -15,7 +15,7 @@
         var current = this.transitions.find(function(item) {
           return item.name === inName;
         });
-        if (this.state === current.from) {
+        if (this.state === current.from || current.from === '*') {
           var value = current.to;
           this.state = value;
           this.options.onTransition({
