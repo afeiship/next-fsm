@@ -40,3 +40,4 @@ fsm.transition('off');
 
 ## resources
 - https://github.com/afeiship/fsm-notes
+- https://github.com/jakesgordon/javascript-state-machine
