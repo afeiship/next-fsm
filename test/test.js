@@ -5,7 +5,7 @@
   describe('NxFsm.methods', function() {
     test('component: switch', function() {
       var times = 0;
-      var fsm = new nx.Fsm({
+      var fsm = new NxFsm({
         init: false,
         transitions: [
           { name: 'on', from: false, to: true },
@@ -26,7 +26,7 @@
     });
 
     test('component: wizard', () => {
-      var fsm = new nx.Fsm({
+      var fsm = new NxFsm({
         init: 0,
         transitions: [
           { name: 'step1', from: 0, to: 1 },
