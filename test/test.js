@@ -25,7 +25,7 @@
       expect(times).toBe(2);
     });
 
-    test('component: wizard', () => {
+    test.only('component: wizard', () => {
       var fsm = new NxFsm({
         init: 0,
         transitions: [
@@ -35,8 +35,8 @@
           { name: 'reset', from: '*', to: 0 }
         ],
         onTransition: function(inEvent) {
-          const { value } = inEvent.target;
-          console.log('current state:', value);
+          const { value, name } = inEvent.target;
+          console.log('current name,state:', name, value);
         }
       });
 

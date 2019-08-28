@@ -20,6 +20,7 @@
           this.state = value;
           this.options.onTransition({
             target: {
+              name: inName,
               value: value
             }
           });
