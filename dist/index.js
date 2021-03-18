@@ -3,7 +3,7 @@
  * description: A finite state machine for next.
  * homepage: https://github.com/afeiship/next-fsm
  * version: 1.0.0
- * date: 2021-03-18 11:09:48
+ * date: 2021-03-18 11:10:16
  * license: MIT
  */
 
