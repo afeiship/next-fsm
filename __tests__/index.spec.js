@@ -1,9 +1,8 @@
-(function() {
-  var nx = require('next-js-core2');
-  var NxFsm = require('../src/next-fsm');
+(function () {
+  const NxFsm = require('../src');
 
-  describe('NxFsm.methods', function() {
-    test('component: switch', function() {
+  describe('NxFsm.methods', function () {
+    test('component: switch', function () {
       var times = 0;
       var fsm = new NxFsm({
         init: false,
@@ -11,7 +10,7 @@
           { name: 'on', from: false, to: true },
           { name: 'off', from: true, to: false }
         ],
-        onTransition: function(inEvent) {
+        onTransition: function (inEvent) {
           const { value } = inEvent.target;
           times++;
           console.log('current state:', value);
@@ -34,7 +33,7 @@
           { name: 'step3', from: 2, to: 3 },
           { name: 'reset', from: '*', to: 0 }
         ],
-        onTransition: function(inEvent) {
+        onTransition: function (inEvent) {
           const { value, name } = inEvent.target;
           console.log('current name,state:', name, value);
         }
